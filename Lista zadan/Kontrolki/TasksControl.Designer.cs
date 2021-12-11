@@ -33,13 +33,13 @@
             this.lblZalogowanyWartosc = new System.Windows.Forms.Label();
             this.lblKreski = new System.Windows.Forms.Label();
             this.lvZadania = new System.Windows.Forms.ListView();
+            this.columnId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnTytul = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnZrobione = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.lblTodoTitle = new System.Windows.Forms.Label();
-            this.columnId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnTytul = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnZrobione = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnWyloguj
@@ -55,6 +55,7 @@
             this.btnWyloguj.TabIndex = 1;
             this.btnWyloguj.Text = "🏃";
             this.btnWyloguj.UseVisualStyleBackColor = false;
+            this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
             // 
             // lblZalogowny
             // 
@@ -71,7 +72,7 @@
             // 
             this.lblZalogowanyWartosc.AutoSize = true;
             this.lblZalogowanyWartosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZalogowanyWartosc.Location = new System.Drawing.Point(266, 27);
+            this.lblZalogowanyWartosc.Location = new System.Drawing.Point(294, 25);
             this.lblZalogowanyWartosc.Name = "lblZalogowanyWartosc";
             this.lblZalogowanyWartosc.Size = new System.Drawing.Size(100, 29);
             this.lblZalogowanyWartosc.TabIndex = 3;
@@ -107,6 +108,21 @@
             this.lvZadania.TabIndex = 6;
             this.lvZadania.UseCompatibleStateImageBehavior = false;
             this.lvZadania.View = System.Windows.Forms.View.Details;
+            // 
+            // columnId
+            // 
+            this.columnId.Text = "Id";
+            this.columnId.Width = 35;
+            // 
+            // columnTytul
+            // 
+            this.columnTytul.Text = "Tytul";
+            this.columnTytul.Width = 281;
+            // 
+            // columnZrobione
+            // 
+            this.columnZrobione.Text = "Zrobione";
+            this.columnZrobione.Width = 287;
             // 
             // btnAdd
             // 
@@ -157,21 +173,6 @@
             this.lblTodoTitle.Size = new System.Drawing.Size(139, 46);
             this.lblTodoTitle.TabIndex = 11;
             this.lblTodoTitle.Text = "TODO";
-            // 
-            // columnId
-            // 
-            this.columnId.Text = "Id";
-            this.columnId.Width = 35;
-            // 
-            // columnTytul
-            // 
-            this.columnTytul.Text = "Tytul";
-            this.columnTytul.Width = 281;
-            // 
-            // columnZrobione
-            // 
-            this.columnZrobione.Text = "Zrobione";
-            this.columnZrobione.Width = 287;
             // 
             // TasksControl
             // 

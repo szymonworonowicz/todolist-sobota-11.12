@@ -52,6 +52,7 @@
             this.btnZalozKonto.TabIndex = 7;
             this.btnZalozKonto.Text = "Załóż konto";
             this.btnZalozKonto.UseVisualStyleBackColor = false;
+            this.btnZalozKonto.Click += new System.EventHandler(this.btnZalozKonto_Click);
             // 
             // btnZaloguj
             // 
@@ -66,6 +67,7 @@
             this.btnZaloguj.TabIndex = 8;
             this.btnZaloguj.Text = "Zaloguj";
             this.btnZaloguj.UseVisualStyleBackColor = false;
+            this.btnZaloguj.Click += new System.EventHandler(this.btnZaloguj_Click);
             // 
             // tbHaslo
             // 
